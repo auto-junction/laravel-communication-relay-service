@@ -16,12 +16,12 @@ class SmsService
 
     public function __construct()
     {
-        $this->host = Config::get('communication-relay-service.host', 'https://crs.farmjunction.in');
-        $this->otp_end_point = Config::get('communication-relay-service.otp_end_point', '/api/send/otp');
-        $this->verify_otp_end_point = Config::get('communication-relay-service.verify_otp_end_point', '/api/verify/otp');
-        $this->sms_end_point = Config::get('communication-relay-service.sms_end_point', '/api/send/sms');
-        $this->source = Config::get('communication-relay-service.source', 'Development');
-        $this->api_key = Config::get('communication-relay-service.api_key', 'none');
+        $this->host = Config::get('communication-relay-service.host');
+        $this->otp_end_point = Config::get('communication-relay-service.otp_end_point');
+        $this->verify_otp_end_point = Config::get('communication-relay-service.verify_otp_end_point');
+        $this->sms_end_point = Config::get('communication-relay-service.sms_end_point');
+        $this->source = Config::get('communication-relay-service.source');
+        $this->api_key = Config::get('communication-relay-service.api_key');
     }
 
     /**
@@ -53,7 +53,7 @@ class SmsService
             ->post($url, [
                 'mobile' => $mobile,
                 'source' => $this->source,
-                'hash'   => $hash ?? 'defaultHash',
+                'hash'   => $hash ?? '',
             ])
             ->json();
     }
