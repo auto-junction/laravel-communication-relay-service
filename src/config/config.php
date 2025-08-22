@@ -4,6 +4,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Communication Relay Service API Host
+    |--------------------------------------------------------------------------
+    |
+    | This key is used for host which used to requests to the Communication Relay 
+    | Service (CRS). You can set this in your .env file:
+    |
+    | CRS_HOST=localhost
+    |
+    */
+    'host' => env('CRS_HOST', 'none'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Communication Relay Service API Key
     |--------------------------------------------------------------------------
     |
