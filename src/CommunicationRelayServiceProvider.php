@@ -5,11 +5,7 @@ namespace AshokDevatwal\CommunicationRelay;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 
-use AshokDevatwal\CreditScore\Services\CibilServiceInterface;
-use AshokDevatwal\CreditScore\Services\CrediSureService;
-use AshokDevatwal\CreditScore\Services\IntegrityMasterService;
-
-use AshokDevatwal\CreditScore\Commands\UpdateScore;
+use AshokDevatwal\CommunicationRelay\Services\SmsService;
 
 class CommunicationRelayServiceProvider extends ServiceProvider
 {
