@@ -1,0 +1,31 @@
+{
+    "name": "autojunction/laravel-communication-relay-service",
+    "description": "Laravel Package.",
+    "type": "library",
+    "keywords": ["laravel", "db", "optimizer"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ashok Devatwal",
+            "email": "ashokdevatwal@tractorjunction.com"
+        }
+    ],
+     "extra": {
+        "laravel": {
+            "providers": [
+                "AshokDevatwal\\CommunicationRelay\\CommunicationRelayServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AshokDevatwal\\CommunicationRelay\\": "src/"
+        }
+    }
+}
