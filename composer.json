@@ -1,8 +1,8 @@
 {
     "name": "autojunction/laravel-communication-relay-service",
-    "description": "Laravel Package.",
+    "description": "Laravel Package - Communication Relay Service.",
     "type": "library",
-    "keywords": ["laravel", "db", "optimizer"],
+    "keywords": ["laravel"],
     "license": "MIT",
     "authors": [
         {
