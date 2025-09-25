@@ -41,7 +41,7 @@ class SmsService
     /**
      * Send OTP
      */
-    public function sendOtp(string $mobile, ?string $hash = null)
+    private function sendOtp(string $mobile, ?string $hash = null)
     {
         $url = rtrim($this->host, '/') . $this->otp_end_point;
 
@@ -81,7 +81,7 @@ class SmsService
     /**
      * Send SMS
      */
-    public function sendSms(string $mobile, array $data)
+    private function sendSms(string $mobile, array $data)
     {
         $url = rtrim($this->host, '/') . $this->sms_end_point;
 
