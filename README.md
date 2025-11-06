@@ -18,6 +18,9 @@ A Laravel package to handle SMS & OTP communication via a central relay service.
 
 ```bash
 composer require autojunction/laravel-communication-relay-service
+
+Install Dev Main
+composer require autojunction/laravel-communication-relay-service:dev-main
 ```
 
 ---
