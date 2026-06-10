@@ -46,6 +46,8 @@ class SmsService
         $url = rtrim($this->host, '/') . $this->otp_end_point;
 
         return Http::asForm()
+            ->connectTimeout(5)   
+            ->timeout(15)        
             ->withHeaders([
                 'X-Api-Key' => $this->api_key,
                 'Accept'    => 'application/json',
@@ -66,6 +68,8 @@ class SmsService
         $url = rtrim($this->host, '/') . $this->verify_otp_end_point;
 
         return Http::asForm()
+            ->connectTimeout(5)   
+            ->timeout(15)         
             ->withHeaders([
                 'X-Api-Key' => $this->api_key,
                 'Accept'    => 'application/json',
@@ -86,6 +90,8 @@ class SmsService
         $url = rtrim($this->host, '/') . $this->sms_end_point;
 
         return Http::asForm()
+            ->connectTimeout(5)
+            ->timeout(15)
             ->withHeaders([
                 'X-Api-Key' => $this->api_key,
                 'Accept'    => 'application/json',
